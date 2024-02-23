@@ -126,7 +126,9 @@
   .input, .form-control {
    /* Container */
     padding: 15px, 40px, 15px, 40px;
-    background: var(--secondaryWhite);
+    background: var(--linkColor);
+    opacity: 0.5;
+    height: 3rem;
     /* Font: regularText */
     font-size: 16px;
     font-family: "Open Sans";
@@ -136,8 +138,15 @@
   }
 
   .pf-c-form-control {
-    border-radius: 5px!important;
-    border-style: none!important;
+    background: var(--fillColor);
+    opacity: 0.5;
+    border-radius: 10px!important;
+    border: 1px solid rgba(0, 128, 0, 0.5);
+    height: 3rem!important;
+  }
+
+  #kc-form-login {
+    margin: 2rem;
   }
 
   #kc-form-options .toggle {
@@ -188,12 +197,13 @@
   }
 
   .form-group input:hover {
-    border-color: var(--primaryYellow);
+    opacity: 0.6;
+    border-color: var(--primaryGreen);
   }
   .form-group input:focus{
     outline-style: none;
     box-shadow: none;
-    border-color: var(--primaryYellow);
+    border-color: var(--primaryGreen);
   }
 
   .pf-c-dropdown__menu {
@@ -217,4 +227,8 @@
     /*border-radius: 6px;*/
     /*border: 2px solid var(--linkColor);*/
     /*padding: 0.2rem;*/
+  }
+
+  .login-pf-page .login-pf-header {
+    margin: 6rem 2rem;
   }
