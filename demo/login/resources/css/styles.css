@@ -3,8 +3,8 @@
 
 :root {
     /* Primary colors */
-    --primaryGreen: #E6EF00;
-    --primaryYellow: #F4D42C;
+    --primaryGreen: #153F2D;
+    --primaryYellow: #FFCE33;
     --primaryBlack: #464647;
     /* Secondary colors */
     --secondaryGreen: #E6EFDF;
@@ -13,9 +13,10 @@
     --white: #FFFFFF;
     /* Font colors */
     --textOffColor: #757575;
-    --linkColor: #B1CC34;
-    --buttonColor: #B1CC34;
-    --backgroundGreen: #E7EFE0;
+    --linkColor: #153F2D;
+    --fillColor: #C5E2D0;
+    --buttonColor: #FFCE33;
+    --backgroundGreen: #ffffff;
     /* Space between */
     --spaceBetweenElementsS: 15px;
     --spaceBetweenElements: 20px;
