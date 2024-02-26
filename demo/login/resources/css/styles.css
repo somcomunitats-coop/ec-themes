@@ -13,7 +13,7 @@
     --white: #FFFFFF;
     --black: #000000;
     /* Font colors */
-    --textOffColor: #757575;
+    --textOffColor: #153F2D;
     --linkColor: #51AB50;
     --fillColor: #ffffff;
     --buttonColor: #FFCE33;
@@ -129,7 +129,6 @@
    /* Container */
     padding: 15px, 40px, 15px, 40px;
     background: var(--linkColor);
-    opacity: 0.5;
     height: 3rem;
     /* Font: regularText */
     font-size: 16px;
@@ -141,9 +140,8 @@
 
   .pf-c-form-control {
     background: var(--white);
-    opacity: 0.5;
     border-radius: 10px!important;
-    border: 1px solid rgba(0, 128, 0, 0.5);
+    border: 1px solid rgba(0, 128, 0, 0.5)!important;
     height: 3rem!important;
   }
 
@@ -198,10 +196,6 @@
     height: 100px;
   }
 
-  .form-group input:hover {
-    opacity: 0.6;
-    border-color: var(--primaryGreen);
-  }
   .form-group input:focus{
     outline-style: none;
     box-shadow: none;
@@ -250,4 +244,31 @@
 
 #kc-form-buttons {
   margin-top: var(--spaceBetweenColumns);
+}
+
+#password-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border: 1px solid rgba(0, 128, 0, 0.5);
+  border-radius: 10px;
+  padding: 5px;
+  height: 3rem!important;
+}
+
+.fa {
+  position: absolute;
+  right: 15px;
+  opacity: 0.5;
+}
+
+#password {
+  border: none
+}
+
+.input {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Open Sans";
+  background: none; 
 }
