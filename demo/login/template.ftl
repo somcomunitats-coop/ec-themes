@@ -35,6 +35,7 @@
         </#list>
     </#if>
     <script src="${url.resourcesPath}/js/languageManager.js"></script>
+    <script src="${url.resourcesPath}/js/passwordField.js"></script>
 </head>
 
 <body class="${properties.kcBodyClass!}">
