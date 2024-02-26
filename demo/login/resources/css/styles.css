@@ -11,16 +11,17 @@
     --secondaryWhite: #FBFBFB;
     --secondaryGray: #F0F0F0;
     --white: #FFFFFF;
+    --black: #000000;
     /* Font colors */
     --textOffColor: #757575;
-    --linkColor: #153F2D;
-    --fillColor: #C5E2D0;
+    --linkColor: #51AB50;
+    --fillColor: #ffffff;
     --buttonColor: #FFCE33;
     --backgroundGreen: #ffffff;
     /* Space between */
-    --spaceBetweenElementsS: 15px;
+    --spaceBetweenElementsS: 10px;
     --spaceBetweenElements: 20px;
-    --spaceBetweenTitleAndText: 25px;
+    --spaceBetweenTexts: 25px;
     --spaceBetweenTextAndButtons: 30px;
     --spaceBetweenColumns: 40px;
     --spaceBetweenTextAndSection: 70px;
@@ -82,18 +83,19 @@
   /* Buttons */
   .pf-c-button.pf-m-primary {
     background-color: var(--buttonColor);
+    color: var(--black)
   }
 
   .button, .btn-primary, .btn-lg {
     border: none;
     border-radius: 40px;
-    padding: 20px 40px 20px 40px;
+    padding: 10px 40px 10px 40px;
     font-size: 16px;
-    text-transform: uppercase;
-    color: var(--white);
-    font-family: "Open Sans";
+    color: var(--black);
+    font-family: "Open Sans"; /* How to import Raleway font? */
     font-weight: 700;
-    background: var(--buttonColor)!important;
+    /* background: var(--buttonColor)!important; */
+    height: 45px;
   }
 
   /* .btn-primary:active:focus {
@@ -118,8 +120,8 @@
   }
 
   .form-group {
-    margin-top: var(--spaceBetweenTextAndButtons);
-    margin-bottom: var(--spaceBetweenTextAndButtons);
+    margin-top: var(--spaceBetweenTexts);
+    margin-bottom: var(--spaceBetweenElementsS);
   }
 
   /* Input */
@@ -138,14 +140,14 @@
   }
 
   .pf-c-form-control {
-    background: var(--fillColor);
+    background: var(--white);
     opacity: 0.5;
     border-radius: 10px!important;
     border: 1px solid rgba(0, 128, 0, 0.5);
     height: 3rem!important;
   }
 
-  #kc-form-login {
+  #kc-form {
     margin: 2rem;
   }
 
@@ -230,5 +232,22 @@
   }
 
   .login-pf-page .login-pf-header {
-    margin: 6rem 2rem;
+    margin: 10rem 3rem 3rem;
   }
+
+.link {
+  color: var(--linkColor);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.new-in-app {
+  color: var(--black) !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#kc-form-buttons {
+  margin-top: var(--spaceBetweenColumns);
+}

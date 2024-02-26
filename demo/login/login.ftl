@@ -39,31 +39,19 @@
 
                 </div>
 
-                <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
-                    <div id="kc-form-options">
-                        <#if realm.rememberMe && !usernameHidden??>
-                            <div class="checkbox">
-                                <label>
-                                    <#if login.rememberMe??>
-                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
-                                    <#else>
-                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
-                                    </#if>
-                                </label>
-                            </div>
-                        </#if>
-                        </div>
-
                 </div>
 
+                <div class="${properties.kcFormOptionsWrapperClass!}">
+                    <#if realm.resetPasswordAllowed>
+                        <span><a class="link" tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
+                    </#if>
+                </div>
                 <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
                     <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
                     <input tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                 </div>
                 <div class="${properties.kcFormOptionsWrapperClass!}">
-                    <#if realm.resetPasswordAllowed>
-                        <span><a tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
-                    </#if>
+                    <span><p class="new-in-app"> ${msg("newInThisApp")} <a class="link" tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("newInThisAppHelper")}</a></p></span>
                 </div>
             </form>
         </#if>
