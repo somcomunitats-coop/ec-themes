@@ -10,28 +10,38 @@
                 <#if !usernameHidden??>
                     <div class="${properties.kcFormGroupClass!}">
 
-                        <input tabindex="1" placeholder="${msg("username")}" id="username" class="${properties.kcInputClass!} input" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off"
-                               aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
+                        <input
+                            tabindex="1"
+                            placeholder="${msg("username")}"
+                            id="username"
+                            class="${properties.kcInputClass!} <#if messagesPerField.existsError('username','password')>input-error<#else>input</#if>"
+                            name="username"
+                            value="${(login.username!'')}"
+                            type="text"
+                            autofocus
+                            autocomplete="off"
                         />
 
-                        <#if messagesPerField.existsError('username','password')>
-                            <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
-                                    ${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}
-                            </span>
-                        </#if>
 
                     </div>
                 </#if>
 
                 <div class="${properties.kcFormGroupClass!}">
 
-                    <div id="password-wrapper">
-                        <input class="input" tabindex="2" placeholder="${msg("password")}" id="password" name="password" type="password" autocomplete="off"
-                               aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
+                    <div id="<#if messagesPerField.existsError('username','password')>password-wrapper-error<#else>password-wrapper</#if>">
+                        <input
+                            class="input"
+                            tabindex="2"
+                            placeholder="${msg("password")}"
+                            id="password"
+                            name="password"
+                            type="password"
+                            autocomplete="off"
+                            aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                         />
                         <i class="fa fa-eye" id="togglePassword"></i>
                     </div>
-                    <#if usernameHidden?? && messagesPerField.existsError('username','password')>
+                    <#if messagesPerField.existsError('username','password')>
                         <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
                                 ${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}
                         </span>

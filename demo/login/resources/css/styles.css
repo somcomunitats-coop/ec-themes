@@ -12,6 +12,7 @@
     --secondaryGray: #F0F0F0;
     --white: #FFFFFF;
     --black: #000000;
+    --error: #DC2626;
     /* Font colors */
     --textOffColor: #153F2D;
     --linkColor: #51AB50;
@@ -27,6 +28,8 @@
     --spaceBetweenTextAndSection: 70px;
     --spaceBetweenBlocAndText: 100px;
     --spaceBetweenSections: 150px;
+    /* Heights */
+    --fieldHeight: 3rem;
   }
 
   /* Fonts */
@@ -127,7 +130,6 @@
   /* Input */
   .input, .form-control {
    /* Container */
-    padding: 15px, 40px, 15px, 40px;
     background: var(--linkColor);
     height: 3rem;
     /* Font: regularText */
@@ -140,9 +142,17 @@
 
   .pf-c-form-control {
     background: var(--white);
-    border-radius: 10px!important;
-    border: 1px solid rgba(0, 128, 0, 0.5)!important;
-    height: 3rem!important;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 128, 0, 0.5);
+    height: 3rem;
+  }
+
+  .pf-c-form-control:not(textarea) {
+    height: var(--fieldHeight);
+  }
+
+  .pf-c-form-control:focus {
+    border-bottom-width: 1px;
   }
 
   #kc-form {
@@ -199,7 +209,6 @@
   .form-group input:focus{
     outline-style: none;
     box-shadow: none;
-    border-color: var(--primaryGreen);
   }
 
   .pf-c-dropdown__menu {
@@ -256,6 +265,17 @@
   height: 3rem!important;
 }
 
+#password-wrapper-error {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: rgba(220, 38, 38, 0.1);
+  border: 1px solid var(--error);
+  border-radius: 10px;
+  padding: 5px;
+  height: 3rem!important;
+}
+
 .fa {
   position: absolute;
   right: 15px;
@@ -266,9 +286,26 @@
   border: none
 }
 
+.input-error {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Open Sans";
+  background-color: rgba(220, 38, 38, 0.1);
+  border: 1px solid var(--error);
+  height: 3rem;
+  line-height: 1.7em;
+  font-style: normal;
+}
+
 .input {
   font-size: 16px;
   font-weight: 500;
   font-family: "Open Sans";
   background: none; 
+}
+
+.pf-m-error {
+  color: var(--error);
+  font-size: 14px;
+  font-weight: 500;
 }
