@@ -2,241 +2,263 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 :root {
-    /* Primary colors */
-    --primaryGreen: #153F2D;
-    --primaryYellow: #FFCE33;
-    --primaryBlack: #464647;
-    /* Secondary colors */
-    --secondaryGreen: #E6EFDF;
-    --secondaryWhite: #FBFBFB;
-    --secondaryGray: #F0F0F0;
-    --white: #FFFFFF;
-    --black: #000000;
-    --error: #DC2626;
-    /* Font colors */
-    --textOffColor: #153F2D;
-    --linkColor: #51AB50;
-    --fillColor: #ffffff;
-    --buttonColor: #FFCE33;
-    --backgroundGreen: #ffffff;
-    /* Space between */
-    --spaceBetweenElementsS: 10px;
-    --spaceBetweenElements: 20px;
-    --spaceBetweenTexts: 25px;
-    --spaceBetweenTextAndButtons: 30px;
-    --spaceBetweenColumns: 40px;
-    --spaceBetweenTextAndSection: 70px;
-    --spaceBetweenBlocAndText: 100px;
-    --spaceBetweenSections: 150px;
-    /* Heights */
-    --fieldHeight: 3rem;
-  }
+  /* Primary colors */
+  --primaryGreen: #153F2D;
+  --primaryYellow: #FFCE33;
+  --primaryBlack: #464647;
+  /* Secondary colors */
+  --secondaryGreen: #E6EFDF;
+  --secondaryWhite: #FBFBFB;
+  --secondaryGray: #F0F0F0;
+  --white: #FFFFFF;
+  --black: #000000;
+  --error: #DC2626;
+  /* Font colors */
+  --textOffColor: #153F2D;
+  --linkColor: #51AB50;
+  --fillColor: #ffffff;
+  --buttonColor: #FFCE33;
+  --backgroundGreen: #ffffff;
+  /* Space between */
+  --spaceBetweenElementsS: 10px;
+  --spaceBetweenElements: 20px;
+  --spaceBetweenTexts: 25px;
+  --spaceBetweenTextAndButtons: 30px;
+  --spaceBetweenColumns: 40px;
+  --spaceBetweenTextAndSection: 70px;
+  --spaceBetweenBlocAndText: 100px;
+  --spaceBetweenSections: 150px;
+  /* Heights */
+  --fieldHeight: 3rem;
+}
 
-  /* Fonts */
-  .mainTitle, #kc-header-wrapper {
-    color: var(--primaryBlack);
-    line-height: 1em;
-    font-size: 28px;
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    font-weight: 800
-  }
+/* Fonts */
+.mainTitle,
+#kc-header-wrapper {
+  color: var(--primaryBlack);
+  line-height: 1em;
+  font-size: 28px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 800
+}
 
-  .secondaryTitle, #kc-page-title {
-    color: var(--linkColor);
-    line-height: 1em;
-    font-size: 23px;
-    font-family: "Open Sans";
-    font-weight: 500;
-  }
+.secondaryTitle,
+#kc-page-title {
+  color: var(--primaryGreen);
+  line-height: 28px;
+  font-size: 22px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  text-align: -webkit-center;
 
-  .header {
-    color: var(--primaryBlack);
-    line-height: 1.1em;
-    font-size: 28px;
-    font-family: "Open Sans";
-    text-transform: uppercase;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-  .regularText, .label-text, .control-label, #kc-locale-dropdown a {
-    color: var(--textOffColor);
-    line-height: 1.7em;
-    font-size: 16px;
-    font-family: "Open Sans";
-  }
-  
-  .link, a {
-    color: var(--linkColor);
-    line-height: 1.7em;
-    font-size: 16px;
-    font-family: "Open Sans";
-    font-weight: 500;
-  }
+  /* align-content: center; */
+  /* flex-wrap: wrap; */
+  text-align: center;
 
-  /* Body */
 
-  body {
-    background: var(--white) !important;
-    color: var(--primaryBlack);
-    font-size: 18px;
-    height: inherit!important;
-    min-width: fit-content!important;
-  }
+}
 
-  /* Buttons */
-  .pf-c-button.pf-m-primary {
-    background-color: var(--buttonColor);
-    color: var(--black)
-  }
+.header {
+  color: var(--primaryBlack);
+  line-height: 1.1em;
+  font-size: 28px;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+}
 
-  .button, .btn-primary, .btn-lg {
-    border: none;
-    border-radius: 40px;
-    padding: 10px 40px 10px 40px;
-    font-size: 16px;
-    color: var(--black);
-    font-family: "Open Sans"; /* How to import Raleway font? */
-    font-weight: 700;
-    /* background: var(--buttonColor)!important; */
-    height: 45px;
-  }
+.regularText,
+.label-text,
+.control-label,
+#kc-locale-dropdown a {
+  color: var(--textOffColor);
+  line-height: 1.7em;
+  font-size: 16px;
+  font-family: "Open Sans";
+}
 
-  /* .btn-primary:active:focus {
+.link,
+a {
+  color: var(--linkColor);
+  line-height: 1.7em;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+
+/* Body */
+
+body {
+  background: var(--white) !important;
+  color: var(--primaryBlack);
+  font-size: 18px;
+  height: inherit !important;
+  min-width: fit-content !important;
+}
+
+/* Buttons */
+.pf-c-button.pf-m-primary {
+  background-color: var(--buttonColor);
+  color: var(--black)
+}
+
+.button,
+.btn-primary,
+.btn-lg {
+  border: none;
+  border-radius: 40px;
+  padding: 10px 40px 10px 40px;
+  font-size: 16px;
+  color: var(--black);
+  font-family: "Open Sans";
+  /* How to import Raleway font? */
+  font-weight: 700;
+  /* background: var(--buttonColor)!important; */
+  height: 45px;
+}
+
+/* .btn-primary:active:focus {
     outline: none;
     background: var(--primaryBlack) !important;
   } */
 
-  .btn-primary:hover {
-    outline: none;
-    background: var(--buttonColor) !important;
-    opacity: 0.8;
-  }
+.btn-primary:hover {
+  outline: none;
+  background: var(--buttonColor) !important;
+  opacity: 0.8;
+}
 
-  /* Card */
-  .card, .card-pf {
-    border-radius: 15px;
-    box-shadow: none;
-    padding: 30px, 30px, 30px, 30px;
-    background: var(--backgroundGreen);
-    max-width: 600px!important;
-    margin: auto!important;
-  }
+/* Card */
+.card,
+.card-pf {
+  border-radius: 15px;
+  box-shadow: none;
+  padding: 30px, 30px, 30px, 30px;
+  background: var(--backgroundGreen);
+  max-width: 600px !important;
+  margin: auto !important;
+}
 
-  .form-group {
-    margin-top: var(--spaceBetweenTexts);
-    margin-bottom: var(--spaceBetweenElementsS);
-  }
+.form-group {
+  margin-top: var(--spaceBetweenTexts);
+  margin-bottom: var(--spaceBetweenElementsS);
+}
 
-  /* Input */
-  .input, .form-control {
-   /* Container */
-    background: var(--linkColor);
-    height: 3rem;
-    /* Font: regularText */
-    font-size: 16px;
-    font-family: "Open Sans";
-    color: var(--textOffColor);
-    line-height: 1.7em;
-    font-style: normal;
-  }
+/* Input */
+.input,
+.form-control {
+  /* Container */
+  background: var(--linkColor);
+  height: 3rem;
+  /* Font: regularText */
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: var(--textOffColor);
+  line-height: 1.7em;
+  font-style: normal;
+}
 
-  .pf-c-form-control {
-    background: var(--white);
-    border-radius: 10px;
-    border: 1px solid rgba(0, 128, 0, 0.5);
-    height: 3rem;
-  }
+.pf-c-form-control {
+  background: var(--white);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 128, 0, 0.5);
+  height: 3rem;
+}
 
-  .pf-c-form-control:not(textarea) {
-    height: var(--fieldHeight);
-  }
+.pf-c-form-control:not(textarea) {
+  height: var(--fieldHeight);
+}
 
-  .pf-c-form-control:focus {
-    border-bottom-width: 1px;
-  }
+.pf-c-form-control:focus {
+  border-bottom-width: 1px;
+}
 
-  #kc-form {
-    margin: 2rem;
-  }
+#kc-form-options .toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--secondaryWhite);
+}
 
-  #kc-form-options .toggle {
-    isolation: isolate;
-    position: relative;
-    height: 30px;
-    width: 60px;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: var(--secondaryWhite);
-  }
+#kc-form-options .dot {
+  height: 100%;
+  width: 200%;
+  background: var(--textOffColor);
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
 
-  #kc-form-options .dot {
-    height: 100%;
-    width: 200%;
-    background: var(--textOffColor);
-    border-radius: 15px;
-    transform: translate3d(-75%, 0, 0);
-    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  }
+#rememberMe:checked~.dot {
+  transform: translate3d(25%, 0, 0);
+  background-color: var(--buttonColor);
+}
 
-  #rememberMe:checked ~ .dot {
-    transform: translate3d(25%, 0, 0);
-    background-color: var(--buttonColor);
-  }
+#kc-form-options label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 8px;
+}
 
-  #kc-form-options label {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    padding-left: 8px;
-  }
+#kc-form-options .label-text {
+  margin-left: var(--spaceBetweenElementsS);
+}
 
-  #kc-form-options .label-text {
-    margin-left: var(--spaceBetweenElementsS);
-  }
+.alert-error {
+  border-color: var(--primaryYellow)
+}
 
-  .alert-error {
-    border-color: var(--primaryYellow)
-  }
+.pficon-error-circle-o:before {
+  color: var(--primaryYellow)
+}
 
-  .pficon-error-circle-o:before {
-    color: var(--primaryYellow)
-  }
+#logo {
+  height: 100px;
+}
 
-   #logo {
-    height: 100px;
-  }
+.form-group input:focus {
+  outline-style: none;
+  box-shadow: none;
+}
 
-  .form-group input:focus{
-    outline-style: none;
-    box-shadow: none;
-  }
+.pf-c-dropdown__menu {
+  display: none;
+  margin-top: -4px;
+}
 
-  .pf-c-dropdown__menu {
-   display: none;
-   margin-top: -4px;
-  }
+.pf-c-dropdown__menu:hover {
+  display: block;
+}
 
-  .pf-c-dropdown__menu:hover {
-   display: block;
-  }
+#kc-locale-dropdown:hover .pf-c-dropdown__menu {
+  display: block;
+}
 
-  #kc-locale-dropdown:hover .pf-c-dropdown__menu {
-    display: block;
-  }
+#kc-locale-dropdown {
+  /*background-color: white;*/
+  /*display: block;*/
+  width: 100px;
+  /*text-align: center;*/
+  /*border-radius: 6px;*/
+  /*border: 2px solid var(--linkColor);*/
+  /*padding: 0.2rem;*/
+}
 
-  #kc-locale-dropdown {
-    /*background-color: white;*/
-    /*display: block;*/
-    width: 100px;
-    /*text-align: center;*/
-    /*border-radius: 6px;*/
-    /*border: 2px solid var(--linkColor);*/
-    /*padding: 0.2rem;*/
-  }
+.login-pf-page .login-pf-header {
+  margin: 10rem 3rem 1rem 3rem;
+}
 
-  .login-pf-page .login-pf-header {
-    margin: 10rem 3rem 3rem;
-  }
+.login-pf-page .card-pf p {
+  text-align: center;
+}
 
 .link {
   color: var(--linkColor);
@@ -253,6 +275,8 @@
 
 #kc-form-buttons {
   margin-top: var(--spaceBetweenColumns);
+  margin-bottom: var(--spaceBetweenElementsS);
+  width: 100%;
 }
 
 #password-wrapper {
@@ -262,7 +286,7 @@
   border: 1px solid rgba(0, 128, 0, 0.5);
   border-radius: 10px;
   padding: 5px;
-  height: 3rem!important;
+  height: 3rem !important;
 }
 
 #password-wrapper-error {
@@ -273,7 +297,7 @@
   border: 1px solid var(--error);
   border-radius: 10px;
   padding: 5px;
-  height: 3rem!important;
+  height: 3rem !important;
 }
 
 .fa {
@@ -301,11 +325,41 @@
   font-size: 16px;
   font-weight: 500;
   font-family: "Open Sans";
-  background: none; 
+  background: none;
 }
 
 .pf-m-error {
   color: var(--error);
   font-size: 14px;
   font-weight: 500;
+}
+
+.centered-element {
+  text-align: center;
+}
+
+.login-pf-page .login-pf-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kc-content {
+  margin: 0rem 2rem;
+}
+
+#kc-form-options {
+  margin-top: var(--spaceBetweenTextAndButtons);
+}
+
+.instructions {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primaryGreen) !important;
+}
+
+.img-wrapper {
+  width: 58px;
+  height: 58px;
+  margin: var(--spaceBetweenElementsS);
 }
