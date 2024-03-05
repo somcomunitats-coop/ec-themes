@@ -25,9 +25,6 @@
                         </span>
                     </#if>
             </div>
-        </form>
-
-
             <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
 
                 <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
@@ -43,6 +40,9 @@
                     </div>
                 </div>
             </div>
+
+        </form>
+
     <#elseif section = "info" >
     </#if>
 </@layout.registrationLayout>
