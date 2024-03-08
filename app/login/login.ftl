@@ -1,7 +1,7 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=!messagesPerField.existsError('username','password') displayInfo=realm.password && realm.registrationAllowed && !registrationDisabled??; section>
     <#if section = "header">
-        <img src="${url.resourcesPath}/img/OP.jpg" alt="One Piece" />
+        <img src="${url.resourcesPath}/img/SomComunitatsLogo.png" alt="One Piece" />
     <#elseif section = "form">
     <div id="kc-form">
       <div id="kc-form-wrapper">
