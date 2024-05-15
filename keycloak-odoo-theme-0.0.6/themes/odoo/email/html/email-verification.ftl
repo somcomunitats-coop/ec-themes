@@ -1,5 +1,9 @@
+<#outputformat "plainText">
+<#assign requiredActionsText><#if requiredActions??><#list requiredActions><#items as reqActionItem>${msg("requiredAction.${reqActionItem}")}<#sep>, </#sep></#items></#list></#if></#assign>
+</#outputformat>
+
 <html>
 <body>
-<p>Hola</p>
+${kcSanitize(msg("testEmail",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration), username))?no_esc}
 </body>
 </html>
