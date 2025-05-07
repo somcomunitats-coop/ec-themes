@@ -61,7 +61,7 @@
                     <input tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                 </div>
                 <div class="${properties.kcFormOptionsWrapperClass!}">
-                    <span><p class="new-in-app"> ${msg("newInThisApp")} <a class="link" tabindex="5" href="${newInThisAppUrl}">${msg("newInThisAppHelper")}</a></p></span>
+                    <span><p class="new-in-app"> ${msg("newInThisApp")} <a class="link" tabindex="5" href="${msg("newInThisAppUrl")}">${msg("newInThisAppHelper")}</a></p></span>
                 </div>
             </form>
         </#if>
